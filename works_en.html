@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>More Works — MIROV·PROD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="worksBody">
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <header class="worksTop">
+    <a class="mark" href="./index.html" aria-label="Home">
+      <div class="mark__box">MP</div>
+      <div class="mark__txt">MIROV<span class="dot">·</span>PROD</div>
+    </a>
+
+    <div class="worksTop__right">
+      <div class="filters" id="filters">
+        <button class="pillBtn is-active" data-filter="all">All</button>
+        <button class="pillBtn" data-filter="reels">Reels</button>
+        <button class="pillBtn" data-filter="youtube">YouTube</button>
+        <button class="pillBtn" data-filter="motion">Motion</button>
+      </div>
+      <a class="pill" href="./works.html">RU</a>
+    </div>
+  </header>
+
+  <main class="wrap worksMain">
+    <div class="worksHead">
+      <div class="sectionKicker">More works</div>
+      <h1 class="worksTitle">Selected cases</h1>
+      <p class="muted">Crafted with purpose</p>
+    </div>
+
+    <div class="worksGrid" id="worksGrid"></div>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Work">
+      <button class="modal__close" data-close="1" aria-label="Close">×</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>MIROV·PROD — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">MIROV<span class="dot">·</span>PROD</div>
+      <div class="preloader__bar"><span></span></div>
+      <div class="preloader__hint">loading</div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <!-- Put your file here: assets/565.mp4 (autoplay, loop, muted) -->
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="./assets/565.jpg">
+        <source src="./assets/565.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="hero__top">
+      <a class="mark mark--hero" href="#hero" aria-label="MIROV PROD">
+        <div class="mark__box"><span class="mark__tiny">mp</span>MP</div>
+        <div class="mark__txt">MIROV<span class="dot">·</span>PROD</div>
+      </a>
+
+      <div class="hero__meta">
+        <div class="hero__metaTitle">Монтажер</div>
+        <div class="hero__metaSmall">2025 — ∞</div>
+      </div>
+
+      <nav class="heroNav" aria-label="Sections">
+        <a class="heroNav__link" href="#about">Обо мне</a>
+        <a class="heroNav__link" href="#cases">Кейсы</a>
+        <a class="heroNav__link" href="#approach">Подход</a>
+        <a class="heroNav__link" href="./works.html">More Works</a>
+        <a class="heroNav__link" href="#contact">Контакт</a>
+            <a class="heroNav__pill" href="./index.html">EN</a>
+      </nav>
+    </div>
+
+    <div class="hero__content wrap">
+      <h1 class="heroTitle">MIROV<br>PROD</h1>
+      <div class="heroCaption">REELS • MOTION • YOUTUBE • OTHERS</div>
+      <p class="heroLead">Работаю с роликами всех форматов. Мне важна не только красивая картинка, но и результат</p>
+
+      <div class="heroActions">
+        <a class="btnGlass" href="#cases">Смотреть кейсы</a>
+        <a class="btnGhost" href="./works.html">Мои работы →</a>
+      </div>
+
+      <div class="heroIcons" aria-hidden="true">
+        <span class="ico">△</span>
+        <span class="dots"></span>
+        <span class="ico">●</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  
+  <section class="about" id="about">
+    <div class="aboutLayout">
+      <div class="aboutLeft">
+        <div class="sectionKicker">Немного обо мне</div>
+        <div class="aboutPhoto" aria-hidden="true">
+          <img src="assets/mirov.png" alt="MIROV" />
+        </div>
+      </div>
+
+      <div class="aboutRight">
+        <h2 class="big">В монтаже с 2025 года. За это время поработал с брендами, блогерами и продюсерами — от коротких Reels до YouTube форматов.</h2>
+        <p class="muted">Меня зовут Кирилл - я занимаюсь видеомонтажом, работаю с любым форматом видео.<br>Помогаю брендам и авторам делать ролики, которые досматривают до конца.<br><br>Подберу Вам собственный уникальный стиль и дизайн для видео, подходящий конкретно к Вам, Вашему бренду или продукту. Помогу выявить слабые зоны в контенте и решить их. Подскажу как лучше снимать.<br><br>Каждый человек по своему уникален - к каждому требуется индивидуальный подход.</p>
+        <div class="badges">
+          <span class="badge">Reels</span>
+          <span class="badge">YouTube</span>
+          <span class="badge">Motion</span>
+          <span class="badge">Other</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><div class="fact__t">300+ проектов</div><div class="fact__d">за 1 год</div></div>
+      <div class="fact"><div class="fact__t">Индивидуальный подход</div><div class="fact__d">к каждому</div></div>
+      <div class="fact"><div class="fact__t">Заметные кейсы</div><div class="fact__d">с ростом просмотров</div></div>
+    </div>
+  </section>
+
+
+  <!-- DARK SKILLS (ref page 2 vibe) -->
+  <section class="dark">
+    <div class="wrap dark__inner" id="approach">
+      <div class="sectionKicker sectionKicker--dark">С чем работаю</div>
+      
+      <div class="tri tri--single">
+        <div class="tri__col tri__col--single">
+          <h3 class="tri__title">All formats</h3>
+          <p class="tri__txt">Reels, YouTube, рекламные ролики, моушен‑вставки, вертикальные и горизонтальные форматы — под задачу.</p>
+          <div class="segBar" style="--pct:75%"></div>
+          <div class="barMeta">[ 75% ]</div>
+        </div>
+      </div>
+
+
+      <div class="divider divider--dark">
+        <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="section wrap" id="cases">
+    <div class="sectionKicker">Портфолио</div>
+    <div class="split split--tight">
+      <h2 class="big">
+        Ниже — кейсы, над которыми я работал. У каждого была своя задача и ТЗ, и я помог подобрать стиль, соблюдая ТЗ.
+      </h2>
+</div>
+
+    <div class="projects" id="casesGrid"></div>
+
+    <a class="casesCta" href="./works.html">
+      <div class="casesCta__meta"><span>Мои работы</span><span>MIROV PROD</span></div>
+      <div class="casesCta__title">Открыть works <span class="casesCta__arrow">→</span></div>
+      </a>
+
+  </section>
+
+  
+  <!-- PHILOSOPHY -->
+  <section class="wrap section" id="philosophy">
+    <div class="kicker">Философия монтажа</div>
+
+    <div class="howGrid howGrid--ref">
+      <h2 class="howBig howBig--ref">
+        Монтаж — это инструмент.<br>
+        Это <span class="soft">смысл</span>, <span class="soft">ритм</span> и <span class="soft">удержание</span>.
+        Я собираю видео так, чтобы его хотелось досмотреть.
+      </h2>
+
+      <div class="howSide howSide--ref">
+        <p class="small">
+          Я не давлю эффектами. Я выстраиваю структуру и делаю акценты только там,
+          где они усиливают мысль — спокойно и чисто.
+        </p>
+
+        <div class="howBadgeRow">
+          <span class="howBadge">Clarity</span>
+          <span class="howBadge">Emotions</span>
+          <span class="howBadge">Retention</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="refList" data-accordion="philosophy">
+      <div class="refRow is-open">
+        <button class="refHead" type="button" aria-expanded="true">
+          <span class="refNum">[ 01 ]</span>
+          <span class="refTitle">Сначала смысл</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody" style="height:auto">
+          <div class="refBody__inner">
+            Я выстраиваю структуру и сторитейлинг: что главное, где акцент, где пауза. Без логики не работает ни один красивый переход, а без правильного сторитейлинга теряется смысл
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 02 ]</span>
+          <span class="refTitle">Ритм управляет вниманием</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            Темп задаёт эмоцию и целостность видео. Я работаю с динамикой так, чтобы зритель не терял интерес к просмотру.
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 03 ]</span>
+          <span class="refTitle">Чистота важнее эффектов</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            VFX, эффекты и моушен - это инструмент. Я добавляю их только там, где это необходимо и где они усиливают идею, не перегружая ролик.
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 04 ]</span>
+          <span class="refTitle">Уникальность = успешный личный бренд.</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            Уникальность помогает заметить, запомнить и выбрать именно тебя.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section wrap" id="contact">
+    <div class="divider">
+      <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+    </div>
+
+    <div class="contactHead">
+      <h2 class="big">Открыт к новым<br>проектам и идеям</h2>
+      <p class="muted">Если хотите обсудить видео, продукт или личный бренд — напишите мне. Свяжитесь со мной по любой удобной для Вас платформе и мы детальнее обсудим сотрудничество друг с другом и проведем небольшой созвон.</p>
+    </div>
+
+    <div class="contactGrid">
+      <a class="chip" href="https://t.me/cymirov" target="_blank" target="_blank" rel="noreferrer">Telegram</a>
+      <a class="chip" href="https://instagram.com/cymirov" target="_blank" target="_blank" rel="noreferrer">Instagram</a>
+      <a class="chip" href="https://wa.me/79209807232" target="_blank" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="chip" href="mailto:kirillvitalievich14@gmail.com">Email</a>
+    </div>
+
+    <div class="footer">
+      <div class="footer__left">
+        <div class="markMini">MP</div>
+        <div class="muted">© MIROV<span class="dot">·</span>PROD</div>
+      </div>
+      <div class="footer__right muted">Made with clean typography · 2026</div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Case">
+      <button class="modal__close" data-close="1" aria-label="Close">×</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+<div style="text-align:center;opacity:.35;font-size:12px;margin-top:60px;margin-bottom:20px;">Meta признана экстремистской организацией в России</div>
+</body>
+</html>

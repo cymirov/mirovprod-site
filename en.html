@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>MIROV.PROD — Video editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">MIROV<span class="dot">·</span>PROD</div>
+      <div class="preloader__bar"><span></span></div>
+      <div class="preloader__hint">loading</div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <!-- Put your file here: assets/565.mp4 (autoplay, loop, muted) -->
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="./assets/565.jpg">
+        <source src="./assets/565.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="hero__top">
+      <a class="mark mark--hero" href="#hero" aria-label="MIROV PROD">
+        <div class="mark__box"><span class="mark__tiny">mp</span>MP</div>
+        <div class="mark__txt">MIROV<span class="dot">·</span>PROD</div>
+      </a>
+
+      <div class="hero__meta">
+        <div class="hero__metaTitle">Video editor</div>
+        <div class="hero__metaSmall">2025 — ∞</div>
+      </div>
+
+      <nav class="heroNav" aria-label="Sections">
+        <a class="heroNav__link" href="#about">About</a>
+        <a class="heroNav__link" href="#cases">Cases</a>
+        <a class="heroNav__link" href="#approach">Approach</a>
+        <a class="heroNav__link" href="./works_en.html">More Works</a>
+        <a class="heroNav__link" href="#contact">Contact</a>
+            <a class="heroNav__pill" href="./ru.html">RU</a>
+      </nav>
+    </div>
+
+    <div class="hero__content wrap">
+      <h1 class="heroTitle">MIROV<br>PROD</h1>
+      <div class="heroCaption">REELS • MOTION • YOUTUBE • OTHERS</div>
+      <p class="heroLead">I work with videos in all formats. What matters to me is not only a beautiful picture, but the result.</p>
+
+      <div class="heroActions">
+        <a class="btnGlass" href="#cases">View cases</a>
+        <a class="btnGhost" href="./works_en.html">My works →</a>
+      </div>
+
+      <div class="heroIcons" aria-hidden="true">
+        <span class="ico">△</span>
+        <span class="dots"></span>
+        <span class="ico">●</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  
+  <section class="about" id="about">
+    <div class="aboutLayout">
+      <div class="aboutLeft">
+        <div class="sectionKicker">About me</div>
+        <div class="aboutPhoto" aria-hidden="true">
+          <img src="assets/mirov.png" alt="MIROV" />
+        </div>
+      </div>
+
+      <div class="aboutRight">
+        <h2 class="big">Editing since 2025. In this time I’ve worked with brands, bloggers and producers — from short Reels to YouTube formats.</h2>
+        <p class="muted">My name is Kirill — I’m a video editor and work with any video format.<br>I help brands and creators make videos people watch to the end.<br><br>I’ll develop a unique style and design for your videos that fits you, your brand or product. I’ll help identify weak points in your content and fix them, and suggest how to shoot better.<br><br>Everyone is unique — each project needs an individual approach.</p>
+        <div class="badges">
+          <span class="badge">Reels</span>
+          <span class="badge">YouTube</span>
+          <span class="badge">Motion</span>
+          <span class="badge">Other</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider">
+      <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><div class="fact__t">300+ projects</div><div class="fact__d">in 1 year</div></div>
+      <div class="fact"><div class="fact__t">Individual approach</div><div class="fact__d">for every client</div></div>
+      <div class="fact"><div class="fact__t">Notable cases</div><div class="fact__d">with growing views</div></div>
+    </div>
+  </section>
+
+
+  <!-- DARK SKILLS (ref page 2 vibe) -->
+  <section class="dark">
+    <div class="wrap dark__inner" id="approach">
+      <div class="sectionKicker sectionKicker--dark">What I do</div>
+      
+      <div class="tri tri--single">
+        <div class="tri__col tri__col--single">
+          <h3 class="tri__title">All formats</h3>
+          <p class="tri__txt">Reels, YouTube, ads, motion inserts, vertical and horizontal formats — tailored to the goal.</p>
+          <div class="segBar" style="--pct:75%"></div>
+          <div class="barMeta">[ 75% ]</div>
+        </div>
+      </div>
+
+
+      <div class="divider divider--dark">
+        <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES -->
+  <section class="section wrap" id="cases">
+    <div class="sectionKicker">Portfolio</div>
+    <div class="split split--tight">
+      <h2 class="big">
+        Below are cases I worked on. Each had its own brief — and I helped choose the right style while following it.
+      </h2>
+</div>
+
+    <div class="projects" id="casesGrid"></div>
+
+    <a class="casesCta" href="./works_en.html">
+      <div class="casesCta__meta"><span>My works</span><span>MIROV PROD</span></div>
+      <div class="casesCta__title">Open works <span class="casesCta__arrow">→</span></div>
+      </a>
+
+  </section>
+
+  
+  <!-- PHILOSOPHY -->
+  <section class="wrap section" id="philosophy">
+    <div class="kicker">Editing philosophy</div>
+
+    <div class="howGrid howGrid--ref">
+      <h2 class="howBig howBig--ref">
+        Editing is a tool.<br>
+        It’s <span class="soft">meaning</span>, <span class="soft">emotion</span> and <span class="soft">retention</span>.
+        I make videos you want to watch to the end.
+      </h2>
+
+      <div class="howSide howSide--ref">
+        <p class="small">
+          I don’t overuse effects. I build structure and add accents only where
+          they strengthen the message — calmly and cleanly.
+        </p>
+
+        <div class="howBadgeRow">
+          <span class="howBadge">Clarity</span>
+          <span class="howBadge">Emotions</span>
+          <span class="howBadge">Retention</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="refList" data-accordion="philosophy">
+      <div class="refRow is-open">
+        <button class="refHead" type="button" aria-expanded="true">
+          <span class="refNum">[ 01 ]</span>
+          <span class="refTitle">Meaning first</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody" style="height:auto">
+          <div class="refBody__inner">
+            I build structure and storytelling: what matters, where the emphasis is, where the pause is. Without logic no beautiful transition works — and without solid storytelling the meaning is lost.
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 02 ]</span>
+          <span class="refTitle">Rhythm guides attention</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            Pace sets emotion and coherence. I shape dynamics so the viewer doesn’t lose interest.
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 03 ]</span>
+          <span class="refTitle">Clarity over effects</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            VFX, effects and motion are tools. I use them only where they’re needed and where they strengthen the idea without overloading the video.
+          </div>
+        </div>
+      </div>
+
+      <div class="refRow">
+        <button class="refHead" type="button" aria-expanded="false">
+          <span class="refNum">[ 04 ]</span>
+          <span class="refTitle">Uniqueness = a strong personal brand.</span>
+          <span class="refPlus" aria-hidden="true"></span>
+        </button>
+        <div class="refBody">
+          <div class="refBody__inner">
+            Uniqueness helps you get noticed, remembered and chosen.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="section wrap" id="contact">
+    <div class="divider">
+      <span class="ico">△</span><span class="dots"></span><span class="ico">●</span>
+    </div>
+
+    <div class="contactHead">
+      <h2 class="big">Open to new<br>projects and ideas</h2>
+      <p class="muted">If you want to discuss a video, product or personal brand — message me.
+Reach me on any platform that’s convenient for you and we’ll talk through the details and have a quick call.</p>
+    </div>
+
+    <div class="contactGrid">
+      <a class="chip" href="https://t.me/cymirov" target="_blank" target="_blank" rel="noreferrer">Telegram</a>
+      <a class="chip" href="https://instagram.com/cymirov" target="_blank" target="_blank" rel="noreferrer">Instagram</a>
+      <a class="chip" href="https://wa.me/79209807232" target="_blank" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a class="chip" href="mailto:kirillvitalievich14@gmail.com">Email</a>
+    </div>
+
+    <div class="footer">
+      <div class="footer__left">
+        <div class="markMini">MP</div>
+        <div class="muted">© MIROV<span class="dot">·</span>PROD</div>
+      </div>
+      <div class="footer__right muted">Made with clean typography · 2026</div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close="1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Case">
+      <button class="modal__close" data-close="1" aria-label="Close">×</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
