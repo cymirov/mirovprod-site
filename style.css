@@ -2193,3 +2193,15 @@ a{ color: #fff !important; }
   .worksHead{ padding-top: 28px !important; }
   .worksTitle{ font-size: clamp(40px, 12vw, 68px) !important; line-height: .95 !important; }
 }
+
+
+/* Mobile: keep hero video fully inside frame (no cropping) */
+@media (max-width: 768px){
+  .hero__bg{background:#000;}
+  .hero__video{
+    object-fit: contain !important;
+    object-position: center !important;
+    width: 100%;
+    height: 100%;
+  }
+}
