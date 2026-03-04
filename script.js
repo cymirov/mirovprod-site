@@ -522,3 +522,18 @@ if (worksGrid){
   });
 })();
 
+
+
+// portrait image fallback (case-sensitive servers)
+(() => {
+  const img = document.querySelector('img[data-portrait], .aboutPhoto img, .about__photo img, img.portrait');
+  if (!img) return;
+  img.addEventListener('error', () => {
+    const src = img.getAttribute('src') || '';
+    // Try common case/extension variants
+    if (src.endsWith('.png')) img.src = src.replace(/\.png$/i, '.PNG');
+    else if (src.endsWith('.PNG')) img.src = src.replace(/\.PNG$/i, '.png');
+    else if (src.match(/\.jpg$/i)) img.src = src.replace(/\.jpg$/i, '.png');
+    else if (src.match(/\.jpeg$/i)) img.src = src.replace(/\.jpeg$/i, '.png');
+  }, { once: true });
+})();
