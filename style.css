@@ -2074,3 +2074,134 @@ a{ color: #fff !important; }
   object-fit:contain;
   background: #000;
 }
+
+
+
+/* =========================
+   MOBILE LAYOUT FIXES
+   ========================= */
+@media (max-width: 720px){
+  /* HERO top bar */
+  .hero__top{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:12px !important;
+    padding: 16px var(--safe) 0 var(--safe) !important;
+  }
+
+  .mark--hero{ gap: 10px !important; }
+
+  .hero__meta{
+    order:2 !important;
+    margin-left:auto !important;
+    text-align:right !important;
+    font-size:12px !important;
+  }
+  .hero__metaTitle{ font-size:12px !important; }
+  .hero__metaSmall{ font-size:12px !important; opacity:.7 !important; }
+
+  /* NAV should not be a tall right column on mobile */
+  .heroNav{
+    order:3 !important;
+    width:100% !important;
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:wrap !important;
+    justify-content:flex-start !important;
+    gap:10px !important;
+    align-items:center !important;
+  }
+  .heroNav__link{
+    font-size:12px !important;
+    padding: 8px 10px !important;
+    border:1px solid rgba(255,255,255,.12) !important;
+    border-radius:999px !important;
+    background: rgba(0,0,0,.18) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+  .heroNav__pill{
+    margin-left:auto !important;
+    padding: 8px 12px !important;
+    font-size:12px !important;
+  }
+
+  .hero__content{
+    padding-top: 46px !important;
+    padding-bottom: 54px !important;
+  }
+  .heroTitle{
+    font-size: clamp(44px, 14vw, 74px) !important;
+    line-height: .92 !important;
+  }
+  .heroLead{
+    font-size: 14px !important;
+    max-width: 36ch !important;
+  }
+  .heroActions{
+    flex-direction:column !important;
+    align-items:stretch !important;
+  }
+  .heroActions .btn{ width:100% !important; }
+
+  /* ABOUT photo: make sure it stays visible and sized on mobile */
+  .aboutGrid{
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+  .aboutPhoto{
+    width: 100% !important;
+    max-width: 520px !important;
+    aspect-ratio: 1 / 1 !important;
+    margin: 0 auto !important;
+  }
+  .aboutPhoto img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display:block !important;
+    border-radius: inherit !important;
+  }
+
+  /* WORKS top bar */
+  .worksTop{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 50 !important;
+    padding: 14px var(--safe) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    background: rgba(0,0,0,.55) !important;
+  }
+  .worksTop,
+  .worksTop__right{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    align-items:center !important;
+    gap: 10px !important;
+  }
+  .worksTop__right{
+    width:100% !important;
+    justify-content:space-between !important;
+  }
+  .filters{
+    flex:1 1 auto !important;
+    display:flex !important;
+    gap:10px !important;
+    overflow-x:auto !important;
+    padding-bottom: 4px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+  .filters::-webkit-scrollbar{ display:none !important; }
+
+  .pillBtn{
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+
+  .worksHead{ padding-top: 28px !important; }
+  .worksTitle{ font-size: clamp(40px, 12vw, 68px) !important; line-height: .95 !important; }
+}
