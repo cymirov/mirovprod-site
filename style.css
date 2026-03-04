@@ -41,7 +41,9 @@ body.hasCursor .cursor{opacity:1}
 
 /* Hero */
 .hero{position:relative;min-height:100vh;color:#fff;overflow:hidden}
-.hero__bg{position:absolute;inset:0}
+.hero__bg{position:absolute;inset:0;overflow:hidden}
+@supports (height: 100svh){.hero{min-height:100svh}}
+@supports (height: 100dvh){.hero{min-height:100dvh}}
 .hero__bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
 .hero__veil{position:absolute;inset:0;background:radial-gradient(circle at 30% 25%, rgba(255,255,255,.10), transparent 52%), linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.72))}
 .hero__top{position:relative;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding: var(--safe)}
@@ -1304,12 +1306,7 @@ a{ color: #fff !important; }
 
 /* ===== v37: Hero video background (no darkening) ===== */
 .hero__bg{position:absolute;inset:0;overflow:hidden}
-.hero__video{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
+.hero__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:translateZ(0)}
 
 /* Remove any veil/filters that darken the hero background */
 .hero__veil{display:none !important}
@@ -1341,16 +1338,7 @@ a{ color: #fff !important; }
 }
 
 /* Video as cover background */
-.hero__video{
-  position:absolute !important;
-  inset:0 !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:cover !important;
-  display:block !important;
-  filter:none !important;
-  opacity:1 !important;
-}
+.hero__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:translateZ(0)}
 
 /* All hero content above video */
 .hero > *{ position: relative; z-index:2; }
